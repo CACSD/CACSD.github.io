@@ -1,10 +1,7 @@
-body {
-    line-height: 36px;
-}
-
 p{
     text-align: center;
     margin: 1vw;
+    height:auto;
 }
 
 hr {
