@@ -1,4 +1,5 @@
-.idea/workspace.xml
+# this will fix files that keep showing up
+# git rm -rf --cached .
+#  git add .
 workspace.xml
-.idea/inspectionProfiles/
 .idea/*
