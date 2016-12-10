@@ -1,66 +1,6 @@
-.bg-color {
-    background: #bfbfbf;
-}
-.accent-color{
-    background: #00d2d6;
-}
-.fg-color {
-    background: #d0d0d0;
-}
-.shadow {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
-}
-.walter-btn {
-    font-family: 'Walter Turncoat', cursive;
-    padding: 4px;
-}
-.special-btn {
-    font-family: 'Special Elite', cursive;
-    cursor: pointer;
-    margin: 1.3vh 1vw;
-}
+
 .architects{
     font-family: 'Architects Daughter', cursive;
-}
-.white-note1 {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/white-note1.png);
-    background-size: 100% 100%;
-}
-.white-note2 {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/white-note2.png);
-    background-size: 100% 100%;
-}
-.green-note1 {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/green-note1.png);
-    background-size: 100% 100%;
-}
-.yellow-note1 {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/yellow-note1.png);
-    background-size: 100% 100%;
-}
-.notepage {
-    width: 500px;
-    height: 349px%;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/notepage.png);
-    background-size: 100% 100%;
 }
 .letters{
     display: flex;
