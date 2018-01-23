@@ -1,0 +1,85 @@
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iorveth Meditation</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iorveth Meditation Calculator</h1>
+    <div class="form"> 
+    <p>This app will determine the total damage inflicted and resulting unit strength after a Iorveth Meditation</p>
+    <p>  
+    <label for="greater">Target Value(greater): </label>
+    <input type="number" id="greater" class="greater"> 
+    </p>
+    <p>
+    <label for="lower">Attack Value(lesser): </label>
+    <input type="number" id="lesser" class="lesser"> 
+    </p>
+    <p>
+    <input type="submit" value="Begin Meditation" class="compute">
+    </p>
+    </div>
+    <div class="resultParas">
+      <p class="results"></p>
+    </div>
+</body>
+
+<script>
+    // Your JavaScript goes here
+    var compute = document.querySelector('.compute');
+    
+    function meditation(){
+        var a = parseInt(document.getElementById('lesser').value);
+        var b = parseInt(document.getElementById('greater').value);
+        var c = 0;
+        var d = 0;
+        var log = []
+        
+        function iorveth(a, b){
+            if(a <= 0){
+                return a;
+            }
+            else{
+                if(a < b){
+                    c = a + c;
+                }
+                else{
+                    c = b + c;
+                }
+                if(b == a){
+                    d = 0;
+                }
+                else{
+                    d = a;
+                }
+                log.push(b + ' minus ' + a)
+                b -= a;
+                if(b <= 0){
+                    b = 0;
+                }
+                return iorveth(b, a);
+            }
+        }
+        iorveth(a, b)
+        document.querySelector('.results').innerHTML =  'Damage Log<br><br>' + log.join('<br>') + '<br><br>The total damage was ' + c + '. The surviving unit power is ' + d + '.';
+    }
+    compute.addEventListener('click', meditation);
+    
+</script>
+</html>
