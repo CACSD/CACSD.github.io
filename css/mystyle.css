@@ -17,12 +17,10 @@ body{
 }
 
 header{
-    background-color: #4051b5;
-    /*background-image: url("../images/header-bg.jpg");*/
+    background-image: url("../images/header-bg.jpg");
     background-size: 100% 100%;
     font-weight: 100;
     font-size: 14px;
-    height: 263px;
 }
 
 main{
