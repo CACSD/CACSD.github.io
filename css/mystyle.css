@@ -39,22 +39,6 @@ main{
 
 }
 
-
-.nav{
-    height: 40px;
-    margin: auto;
-    background-color: rgba(0,0,0,.05);
-}
-
-.nav-link{
-    margin: 0 6%;
-    font-weight: bold;
-    line-height: 42px;
-    font-size: 14px;
-    letter-spacing: 0;
-    text-decoration: none;
-}
-
 .card{
     text-align: left;
     margin: 1%;
