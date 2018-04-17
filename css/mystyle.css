@@ -30,13 +30,16 @@ main{
     margin: 0 auto;
 }
 
+.logo{
+    text-align: left;
+}
+
 .logo-title{
     font-size: 25pt;
     font-weight: 300;
     letter-spacing: .02em;
     line-height: 4.5;
     color: white;
-
 }
 
 .card{
