@@ -20,6 +20,7 @@ header{
     background-image: url("https://cacsd-github-pietrofesar.c9users.io/images/ap-csp/banner.jpg");
     font-weight: 100;
     font-size: 14pt;
+    background-size:cover;
 }
 
 main{
