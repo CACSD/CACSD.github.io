@@ -17,9 +17,10 @@ body{
 }
 
 header{
-    background-color: #4051b5;
-    height: 150px;
-    width: 100%;
+    /*background-color: #4051b5;*/
+    background-image: url('https://cacsd-github-pietrofesar.c9users.io/images/ap-csp/banner.jpg');
+    /*height: 150px;
+    width: 100%;*/
     font-weight: 100;
     font-size: 14px;
 }
