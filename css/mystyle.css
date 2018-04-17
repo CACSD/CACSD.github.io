@@ -30,7 +30,7 @@ main{
 
 .logo{
     text-align: left;
-    height: 80;
+    max-height: 120;
 }
 
 .logo-title{
