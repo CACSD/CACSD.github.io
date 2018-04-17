@@ -29,17 +29,16 @@ main{
 }
 
 .logo{
-    text-align: left;
-    
+    max-height: 90%;
+    padding-top: .75%;
+    vertical-align: -220%;
 }
 
 .logo-title{
-    display: inline;
-    font-size: 25pt;
-    font-weight: 100;
+    font-size: 35pt;
     letter-spacing: .02em;
-    line-height: 4.5;
     color: white;
+  
 }
 
 .card{
