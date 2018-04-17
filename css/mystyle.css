@@ -20,8 +20,6 @@ header{
     background-color: #4051b5;
     height: 150px;
     width: 100%;
-    font-weight: 100;
-    font-size: 14px;
 }
 
 main{
@@ -32,11 +30,13 @@ main{
 
 .logo{
     text-align: left;
+    height: 80;
 }
 
 .logo-title{
+    display: inline;
     font-size: 25pt;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: .02em;
     line-height: 4.5;
     color: white;
