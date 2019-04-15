@@ -12,5 +12,20 @@
             <input type="text" name=""/>
             <input type="submit" value="Submit"/>
         </form>
+        <div>
+            <label for="test1">test1</label>
+            <input type="number" id="num1" class="num1">
+            <input type="submit" value="submit" class="submit">
+            <p class="results"></p>
+        </div>
     </body>
+    <script>
+        var compute = document.querySelector(".submit");
+        
+        function test(){
+            document.querySelector(".results").innerHTML = document.querySelector(".num1").value();
+        }
+        compute.addEventListener(test());
+        
+    </script>
 </html>
