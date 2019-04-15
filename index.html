@@ -1,25 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>splash page</title>
-    <style>
-        html {
-            font-family: sans-serif;
+    <head>
+        <title>Mr. P's Web Page</title>
+    </head>
+    <body>
+        <h1>Hello World!...I mean the world wide web</h1>
+        <!--
+        <img src="kitty.jpg">
+        -->
+        <form>
+            <input type="text" name=""/>
+            <input type="submit" value="Submit"/>
+        </form>
+        <div>
+            <label for="test1">test1</label>
+            <input type="number" id="num1" class="num1">
+            <input type="submit" value="submit" class="submit">
+            <p class="results"></p>
+        </div>
+    <script>
+    console.log("this is test");
+    document.alert("thisis a test");
+    /*
+        var compute = document.querySelector(".submit");
+        
+        function test(){
+            document.alert("WTF");
+            console.log("WTF");
+            document.querySelector(".results").innerHTML = document.querySelector(".num1").value();
         }
-        body {
-            width: 50%;
-            max-width: 800px;
-            min-width: 480px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <p>This is a page for works in progress and experiments. Don't expect too much.<br></p>
-    <p><a href='hangman.html'>Hangman game</a></p>
-    <p><a href='iorbeth.html'>Iorbeth damage computer</a></p>
-    p><a href='/apcsp/student_work.html'>AP Computer Science Principles Student Work</a></p>
+        compute.addEventListener("click", test());
+      */  
+    </script>
     </body>
+    
 </html>
