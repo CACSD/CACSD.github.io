@@ -26,16 +26,28 @@
         </div>
         
     <script>
+    //var d = document;
     console.log("We are inside the web!");
     // alert("Hello World! :)");
     var compute = document.querySelector(".submit");
         
-    function test(){
-        document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
+    function pythagoras(){
+        var a = parseFloat(document.querySelector(".sideA").value());
+        console.log(a);
+        
+        var b = parseFloat(document.querySelector(".sideB").value());
+        console.log(b);
+        
+        var out = document.querySelector(".results");
+        // perform math
+        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        
+        out.innerHTML = parseFloat(c);
+        
+        //document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
     }
-    compute.addEventListener("click", test);
+    compute.addEventListener("click", pythagoras);
     </script>
     </body>
     
 </html>
-
