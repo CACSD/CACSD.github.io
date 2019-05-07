@@ -10,44 +10,47 @@
         -->
         
         <div>
-            <label for="sideA">Side A</label>
-            <input type="number" value="0" class="sideA">
+            <label for="sideA">Input 1</label>
+            <input type="number" value="0" class="input1">
         </div>
-        
         <div>
-            <label for="sideB">Side B</label>
-            <input type="number" value="0" class="sideB">
+            <label for="sideB">Input 2</label>
+            <input type="number" value="0" class="input2">
         </div>
-        
         <div>
-            <label for="sideC">Side C</label>
+            <label for="Results">Results</label>
             <input type="submit" value="submit" class="submit">
-            <p class="results">nothing</p>
+            <p class="sum">nothing</p>
+            <p class="difference">nothing</p>
+            <p class="product">nothing</p>
+            <p class="quotient">nothing</p>
+
+
         </div>
         
     <script>
-    //var d = document;
-    console.log("We are inside the web!");
-    // alert("Hello World! :)");
     var compute = document.querySelector(".submit");
         
-    function pythagoras(){
+    function calculator(){
         var a = parseFloat(document.querySelector(".sideA").value);
         console.log(a);
         
         var b = parseFloat(document.querySelector(".sideB").value);
         console.log(b);
         
-        var out = document.querySelector(".results");
-        // perform math
-        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        var sum = document.querySelector(".sum");
+        var difference = document.querySelector(".difference");
+        var product = document.querySelector(".product");
+        var quotient = document.querySelector(".quotient");
         
-        out.innerHTML = parseFloat(c);
-        
-        //document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
+        sum.innerHTML = a + b;
+        difference.innerHTML = a - b;
+        product.innerHTML = a * b;
+        quotient.innerHTML = a / b;
     }
-    compute.addEventListener("click", pythagoras);
+    compute.addEventListener("click", calculator);
     </script>
     </body>
     
 </html>
+
