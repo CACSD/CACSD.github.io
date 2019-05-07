@@ -11,11 +11,11 @@
         
         <div>
             <label for="input1">Input 1</label>
-            <input type="number" value="0" class="sideA">
+            <input type="number" value="0" class="input1">
         </div>
         <div>
             <label for="input2">Input 2</label>
-            <input type="number" value="0" class="sideB">
+            <input type="number" value="0" class="input2">
         </div>
         <div>
             <label for="Results">Results</label>
@@ -32,10 +32,10 @@
     var compute = document.querySelector(".submit");
         
     function calculator(){
-        var a = parseFloat(document.querySelector(".sideA").value);
+        var a = parseFloat(document.querySelector(".input1").value);
         console.log(a);
         
-        var b = parseFloat(document.querySelector(".sideB").value);
+        var b = parseFloat(document.querySelector(".input2").value);
         console.log(b);
         
         var sum = document.querySelector(".sum");
