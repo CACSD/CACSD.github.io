@@ -37,11 +37,12 @@
     <script>
     var compute = document.querySelector(".submit");
     var radioTest = document.querySelector(".submitRadio");
+    console.log("WTF");
     
     function radioTest(){
         console.log("Radio Test");
         var radioOut = document.querySelector(".radioOut");
-        var radios = document.getElementsByName('response');
+        var radios = document.getElementsByName("response");
         for (var i = 0, length = radios.length; i < length; i++){
             if (radios[i].checked){
                 // do whatever you want with the checked radio
