@@ -29,9 +29,27 @@
             <input type="radio" name="response" value="yes" class="yes" checked>Yes<br>
             <input type="radio" name="response" value="no" class="no">No<br>
         </div>
+        <div>
+            <input type="submit" value="submit" class="submitRadio">
+            <p class="radioOut">nothing</p>
+        </div>
         
     <script>
     var compute = document.querySelector(".submit");
+    var radioTest = document.querySelector(".submitRadio");
+    
+    function radioTest(){
+        var radioOut = document.querySelector(".radioOut");
+        var radios = document.getElementsByName('response');
+        for (var i = 0, length = radios.length; i < length; i++){
+            if (radios[i].checked){
+                // do whatever you want with the checked radio
+                radioOut.innerHTML = radios[i].value;
+                // only one radio can be logically checked, don't check the rest
+                break;
+            }
+        }
+    }
         
     function calculator(){
         var a = parseFloat(document.querySelector(".input1").value);
@@ -51,7 +69,10 @@
         quotient.innerHTML = a / b;
     }
     compute.addEventListener("click", calculator);
+    radioTest.addEventListener("click", radioTest);
+
     </script>
     </body>
     
 </html>
+
