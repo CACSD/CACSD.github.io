@@ -37,12 +37,12 @@
         
     <script>
     //var compute = document.querySelector(".submit");
-    var radioTest = document.querySelector(".submit");
+    var radio = document.querySelector(".submit");
     console.log("WTF");
-    
+    var radioOut = document.querySelector(".radioOut");
     function radioTest(){
         console.log("Radio Test");
-        var radioOut = document.querySelector(".radioOut");
+        
         radioOut.innerHTML = "Woohoo!";
         /*
         
@@ -78,8 +78,8 @@
     compute.addEventListener("click", calculator);
     */
     console.log("WTF 1");
-    radioTest.addEventListener("click", radioTest);
-
+    radio.addEventListener("click", radioTest);
+    radioOut.innerHTML = "WTF for reals";
     </script>
     </body>
     
