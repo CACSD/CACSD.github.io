@@ -18,11 +18,13 @@
     <script>
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
-    var arr = ["yes", "no", "maybe", "sure why not", "what, no, how"];
-    
-    for(var i = 0; i < arr.length; i++){
-        console.log(arr[i]);
+ 
+    function reply(){
+        var radios = document.getElementsByName("response");
+        console.log(radios);
     }
+    
+    submit.addEventListener("click", reply);
     </script>
     </body>
     
