@@ -21,9 +21,13 @@
  
     function reply(){
         var radios = document.getElementsByName("response");
-        console.log(radios);
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
     }
-    
     submit.addEventListener("click", reply);
     </script>
     </body>
