@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example Question</title>
+    </head>
+    <body>
+        <p>What day of the week is it?</p>
+        <div>
+            <input type="radio" name="response" value="Monday">Monday<br>
+            <input type="radio" name="response" value="Tuesday">Tuesday<br>
+            <input type="radio" name="response" value="Wednesday">Wednesday<br>
+            <input type="radio" name="response" value="Thursday">Thursday<br>
+            <input type="radio" name="response" value="Friday">Friday<br>
+            <input type="radio" name="response" value="Saturday">Saturday<br>
+            <input type="radio" name="response" value="Sunday">Sunday<br>
+        </div>
+        
+        <input type="submit" value="submit" class="submit">
+        <p class="out">Nothing yet</p>
+        
+    <script>
+    var submit = document.querySelector(".submit");
+    var out = document.querySelector(".out");
+ 
+    function reply(){
+        var radios = document.getElementsByName("response");
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
+    }
+    submit.addEventListener("click", reply);
+    </script>
+    </body>
+    
+</html>
