@@ -1,36 +1,126 @@
 <!doctype html>
 <html>
     <head>
-        <title>Example Question</title>
+        <title>Rock Music Quiz</title>
     </head>
     <body>
-        <p>What day of the week is it?</p>
+        <img src="seek.jpg">
+        <p>In what year did Metallica's "Kill 'em All" album release?</p>
         <div>
-            <input type="radio" name="response" value="Monday">Monday<br>
-            <input type="radio" name="response" value="Tuesday">Tuesday<br>
-            <input type="radio" name="response" value="Wednesday">Wednesday<br>
-            <input type="radio" name="response" value="Thursday">Thursday<br>
-            <input type="radio" name="response" value="Friday">Friday<br>
-            <input type="radio" name="response" value="Saturday">Saturday<br>
-            <input type="radio" name="response" value="Sunday">Sunday<br>
+            <input type="radio" name="question1" value="1982">1982<br>
+            <input type="radio" name="question1" value="1981">1981<br>
+            <input type="radio" name="question1" value="1990">1990<br>
+            <input type="radio" name="question1" value="1979">1979<br>
+        </div>
+
+        <p class="out1">Nothing yet</p>
+
+        <p>Who is the lead singer for Megadeath?</p>
+        <div>
+            <input type="radio" name="question2" value="Jimmy Hendrix">Jimmy Hendrix<br>
+            <input type="radio" name="question2" value="James Hetfield">James Hetfield<br>
+            <input type="radio" name="question2" value="Dave Mustaine">Dave Mustaine<br>
+            <input type="radio" name="question2" value="Roger Daltrey">Roger Daltrey<br>
         </div>
         
+        <p class="out2">Nothing yet</p>
+
+         <p>Who sang "Rebel Yell" and "White Wedding"?</p>
+        <div>
+            <input type="radio" name="question3" value="Billy Idol">Billy Idol<br>
+            <input type="radio" name="question3" value="Tom Petty">Tom Petty<br>
+            <input type="radio" name="question3" value="Johnny Cash">Johnny Cash<br>
+            <input type="radio" name="question3" value="Blue Oyster Cult">Blue Oyster Cult<br>
+        </div>
+    
+        <p class="out3">Nothing yet</p>
+    
+         <p>Which band sang "Wheel in the Sky" and "Faithfully"?</p>
+        <div>
+            <input type="radio" name="question4" value="Phil Collins">Phil Collins<br>
+            <input type="radio" name="question4" value="Steve Miller Band">Steve Miller Band<br>
+            <input type="radio" name="question4" value="Poison">Poison<br>
+            <input type="radio" name="question4" value="Journey">Journey<br>
+        </div>
+
+        <p class="out4">Nothing yet</p>
+    
+          <p>Which band is Mr.P's favorite?</p>
+        <div>
+            <input type="radio" name="question5" value="Iron Maiden">Iron Maiden<br>
+            <input type="radio" name="question5" value="AC/DC">AC/DC<br>
+            <input type="radio" name="question5" value="Alice in Chains">Alice in Chains<br>
+            <input type="radio" name="question5" value="Black Sabbath">Black Sabbath<br>
+        </div>
+    
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
-        
+        <p class="out5">Nothing yet</p>
+    
     <script>
     var submit = document.querySelector(".submit");
-    var out = document.querySelector(".out");
- 
+    var out1 = document.querySelector(".out1");
+    var out2 = document.querySelector(".out2");
+    var out3 = document.querySelector(".out3");
+    var out4 = document.querySelector(".out4");
+    var out5 = document.querySelector(".out5");
+
     function reply(){
-        var radios = document.getElementsByName("response");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "Saturday"){
-                    out.innerHTML = "correct :) !!!!";
+        var radios1 = document.getElementsByName("question1");
+        for(var i = 0; i < radios1.length; i++){
+            if(radios1[i].checked){
+                if(radios1[i].value == "1982"){
+                    out1.innerHTML = "Correct";
                 }
                 else{
-                    out.innerHTML = "Wrong :( ";
+                    out1.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios2 = document.getElementsByName("question2");
+        for(var i = 0; i < radios2.length; i++){
+            if(radios2[i].checked){
+                if(radios2[i].value == "Dave Mustaine"){
+                    out2.innerHTML = "Correct";
+                }
+                else{
+                    out2.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios3 = document.getElementsByName("question3");
+        for(var i = 0; i < radios3.length; i++){
+            if(radios3[i].checked){
+                if(radios3[i].value == "Billy Idol"){
+                    out3.innerHTML = "Correct";
+                }
+                else{
+                    out3.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios4 = document.getElementsByName("question4");
+        for(var i = 0; i < radios4.length; i++){
+            if(radios4[i].checked){
+                if(radios4[i].value == "Journey"){
+                    out4.innerHTML = "Correct";
+                }
+                else{
+                    out4.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios5 = document.getElementsByName("question5");
+        for(var i = 0; i < radios5.length; i++){
+            if(radios5[i].checked){
+                if(radios5[i].value == "Alice in Chains"){
+                    out5.innerHTML = "Correct";
+                }
+                else{
+                    out5.innerHTML = "Wrong";
                 }
                 break;
             }
