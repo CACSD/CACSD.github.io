@@ -23,3 +23,8 @@ p {
     font-family: cursive;
     color: green;
 }
+
+div{
+    margin-left: auto;
+    margin-right:auto;
+}
