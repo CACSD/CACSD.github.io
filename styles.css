@@ -39,7 +39,9 @@ div{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 8px;
     font-family: 'Luckiest Guy', cursive;
+    font-size: x-large;
     color: #212F3C;
     text-align: left;
     margin: 1%;
+    padding: 1%;
 }
