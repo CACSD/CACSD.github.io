@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/hangman.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <title>Vocabulary Hangman</title>
+</head>
+<body>
+    <main>
+        <!--left column for pic and letter buttons-->
+        <div class="col-5">
+            <!--picture holder-->
+            <div class="col-12">
+                # pic
+            </div>
+            <!--letter button grid-->
+            <div class="col-12">
+                # buttons
+            </div>
+        </div>
+        <!--column for spacing-->
+        <div class="col-2">
+        </div> 
+        <!--right column for data-->
+        <div class="col-5">
+            <!--definition box-->
+            <div class="col-12">
+                # title: definiton
+            </div>
+            <div class="col-12">
+                # definition
+            </div>
+            <!--guess reporting box-->
+             <div class="col-12">
+                # title: Matching letter
+            </div>
+            <div class="col-12">
+                # space for letters
+            </div>
+            <!--enter solution box-->
+            <div class="col-12">
+                # title: solve
+            </div>
+            <div class="col-12">
+                # space to type solution
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<!--
+
+<body class="">
+    <div class="container">
+        <div class="grid architects">
+            <div class="column">
+                <p class="center">Matching Letters</p>
+                <p id="matchingLettersValue" class="center">None</p>
+                <p class="center">Hint</p>
+                <p id="hintValue" class="center">None</p>
+            </div>
+            <div class="column">
+                <img id="picView" class="img-resp" src="./images/hangman/hangman_6.png">
+            </div>
+            <div class="column">
+                <p class="center">Round</p>
+                <p id="roundValue" class="center">1</p>
+                <p class="center">Score</p>
+                <p id="scoreValue" class="center">0</p>
+            </div>
+
+        </div>
+        <div class="grid architects">
+
+            <div class="column">
+                <div class="architects">
+                    <p>Guess a Letter</p>
+                </div>
+                <div class="letters">
+                    <span id="a" class="special-btn">a</span>
+                    <span id="b" class="special-btn">b</span>
+                    <span id="c" class="special-btn">c</span>
+                    <span id="d" class="special-btn">d</span>
+                    <span id="e" class="special-btn">e</span>
+                    <span id="f" class="special-btn">f</span>
+                    <span id="g" class="special-btn">g</span>
+                </div>
+                <div class="letters">
+                    <span id="h" class="special-btn">h</span>
+                    <span id="i" class="special-btn">i</span>
+                    <span id="j" class="special-btn">j</span>
+                    <span id="k" class="special-btn">k</span>
+                    <span id="l" class="special-btn">l</span>
+                    <span id="m" class="special-btn">m</span>
+                    <span id="n" class="special-btn">n</span>
+                </div>
+                <div class="letters">
+                    <span id="o" class="special-btn">o</span>
+                    <span id="p" class="special-btn">p</span>
+                    <span id="q" class="special-btn">q</span>
+                    <span id="r" class="special-btn">r</span>
+                    <span id="s" class="special-btn">s</span>
+                    <span id="t" class="special-btn">t</span>
+                    <span id="u" class="special-btn">u</span>
+                </div>
+                <div class="letters">
+                    <span id="v" class="special-btn">v</span>
+                    <span id="w" class="special-btn">w</span>
+                    <span id="x" class="special-btn">x</span>
+                    <span id="y" class="special-btn">y</span>
+                    <span id="z" class="special-btn">z</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <audio id="complete" src="./sounds/NFF-complete.wav"></audio>
+    <audio id="addressed" src="./sounds/NFF-addressed.wav"></audio>
+    <audio id="special-in" src="./sounds/NFF-day-special-in.wav"></audio>
+    <audio id="special-out" src="./sounds/NFF-day-special-out.wav"></audio>
+    <audio id="choice-bad" src="./sounds/NFF-choice-bad.wav"></audio>
+</body>
+-->
+</html>
+<!--grid goes horizontal-->
+<!--cell is a subdivider, requires a grid to make inside horizontal-->
